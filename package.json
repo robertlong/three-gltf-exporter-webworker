@@ -1,0 +1,16 @@
+{
+  "name": "three-gltf-exporter-webworker",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^2.9.0"
+  },
+  "dependencies": {
+    "three": "matrix-org/three.js#gltf-exporter-worker-dist"
+  }
+}
