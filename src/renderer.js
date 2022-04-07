@@ -16,7 +16,7 @@ let renderer;
 
 export async function start(canvas, pixelRatio, width, height) {
   const rgbeLoader = new RGBELoader();
-  const envMap = await rgbeLoader.loadAsync("/venice_sunset_1k.hdr");
+  const envMap = await rgbeLoader.loadAsync(new URL("../venice_sunset_1k.hdr", import.meta.url).href);
   envMap.mapping = EquirectangularReflectionMapping;
 
   scene = new Scene();
@@ -44,7 +44,7 @@ export async function start(canvas, pixelRatio, width, height) {
   });
 
   const gltfLoader = new GLTFLoader();
-  const gltf = await gltfLoader.loadAsync("/DamagedHelmet.glb");
+  const gltf = await gltfLoader.loadAsync(new URL("../DamagedHelmet.glb", import.meta.url).href);
   scene.add(gltf.scene);
 }
 
