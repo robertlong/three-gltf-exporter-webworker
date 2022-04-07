@@ -63,7 +63,5 @@ export async function exportGLTF() {
     embedImages: true,
   });
 
-  console.log(buffer);
-
   return buffer;
 }
