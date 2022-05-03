@@ -11,6 +11,6 @@
     "vite": "^2.9.0"
   },
   "dependencies": {
-    "three": "matrix-org/three.js#gltf-exporter-worker-dist"
+    "three": "github:matrix-org/three.js#patch-gltf-exporter-worker"
   }
 }
